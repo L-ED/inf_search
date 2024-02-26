@@ -14,7 +14,6 @@ def parse_corpus(data_path, vocabulary_path, dbname="corpus", colname="wikien"):
     doc_id = 0
     tknzr = get_tokenizer("basic_english")
 
-
     table = connect_to_database(dbname, colname)
 
     for _, element in etree.iterparse(data_path):
